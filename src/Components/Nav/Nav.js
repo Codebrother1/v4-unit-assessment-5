@@ -38,10 +38,12 @@ class Nav extends Component {
             <p>placeholder username</p>
           </div>
           <div className='nav-links'>
-            <img className='nav-img' src={homeLogo} alt='home' />
-            <img className='nav-img' src={newLogo} alt='new post' />
+            <Link to={Dash}><img className='nav-img' src={homeLogo} alt='home' /></Link>
+            <Link to={Form}><img className='nav-img' src={newLogo} alt='new post' /></Link>
+          
           </div>
-          <img className='nav-img logout' src={logoutLogo} alt='logout' />
+          <Link to={Auth}>  <img className='nav-img logout' src={logoutLogo} alt='logout' /></Link>
+        
         </div>
   }
 }
