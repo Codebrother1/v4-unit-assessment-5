@@ -12,6 +12,22 @@ const { SERVER_PORT, CONNECTION_STRING } = process.env;
 
 
 app.use(express.json());
+// SESSION
+app.use(session({
+  resave: false,
+  saveUninitialized: true,
+  secret: SESSION_SECRET,
+  cookie: {
+      maxAge: 1000 * 60 * 60 * 24
+  }
+}))
+
+
+
+
+
+
+
 
 // MASSIVE
 massive({

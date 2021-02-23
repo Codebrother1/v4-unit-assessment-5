@@ -1,7 +1,7 @@
 CREATE TABLE helo_users  (
   id SERIAL PRIMARY KEY,
-  username VARCHAR() NOT NULL,
-  password VARCHAR() NOT NULL,
+  username VARCHAR(25) NOT NULL,
+  password VARCHAR(20) NOT NULL,
   profile_pic TEXT
 )
 
