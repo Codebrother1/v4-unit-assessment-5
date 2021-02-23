@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import {Link, withRouter} from 'react-router-dom'
+import {updateUser, logout} from '../redux/reducer'
+
 import axios from 'axios';
 import homeLogo from './../../assets/home_logo.png';
 import newLogo from './../../assets/new_logo.png';
@@ -43,4 +46,6 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+
+const mapStateToProps = state => state;
+export default withRouter(mapStateToProps,(Nav));
