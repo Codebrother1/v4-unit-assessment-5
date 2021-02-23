@@ -26,7 +26,7 @@ switch(action.type){
   case UPDATE_USER:
     return{...state, user: action.payload};
   case LOGOUT:
-      return initialState;
+    return initialState;
 }
 
 }
